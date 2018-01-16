@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>PokeAPI</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="icon" href="../favicon.png">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+
+<body>
+        <nav>
+                <div class="nav-wrapper teal accent-3">
+                        <a href="../index.html" class="brand-logo">
+                                <img src="../favicon.png">
+                        </a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down ">
+                                <li>
+                                        <a class="black-text text-darken-2" href="../index.html">
+                                                <b>Home</b>
+                                        </a>
+                                </li>
+                                <li>
+                                        <a class="black-text text-darken-2" href="pokeapi.html">
+                                                <b>PokeAPI</b>
+                                        </a>
+                                </li>
+                                <li>
+                                        <a class="black-text text-darken-2" href="../Restify/restify.html">
+                                                <b>Phonebook</b>
+                                        </a>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+        <div class="center-align">
+                <h2>PokeList</h2>
+                <p>by Jonas Reichhardt</p>
+                <div>
+                        <button class="waves-effect waves-light btn-large  red accent-4 tooltipped" data-position="bottom" data-delay="30" data-tooltip="Previous 20 pokemons"
+                                onclick="jump(1)">Previous</button>
+                        <button class="waves-effect waves-light btn-large green darken-4 tooltipped" data-position="bottom" data-delay="30" data-tooltip="Next 20 pokemons"
+                                onclick="jump(0)">Next</button>
+                </div>
+        </div>
+
+        <br>
+
+        <div class="card horizontal">
+                <div id="pic" class="card-image">
+
+                </div>
+                <div class="card-stacked">
+                        <div class="card-content">
+                                <b><p id="name"></p></b><br>
+                                <p id="weight"></p>
+                                <ul id="moves"></ul>
+                        </div>
+                </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+                <table class="responsive-table centered highlight" id="pokemons">
+                </table>
+        </div>
+        <script src="index.js"></script>
+</body>
+
+</html>
