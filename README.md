@@ -1,2 +1,4 @@
 # PokeAPI
-Website accessing the PokeAPI and listing pokemons with the option to show details
+Website accessing the [PokeAPI](https://pokeapi.co/) and listing pokemons with the option to show details
+
+**Technologies:** JavaScript, [MaterializeCSS](http://materializecss.com/)
